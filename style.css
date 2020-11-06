@@ -26,7 +26,7 @@
             align-items: center;
             justify-content: space-between;
         }
-            .logo img{
+            .header .logo img{
                 width: 120px;
             }
             .header-nav {
@@ -268,8 +268,8 @@
         }
 
             
-                .footer .logo svg path{
-                    fill: var(--Light-Grayish-Blue);
+                .footer .logo img{
+
                 }
 
             .footer-links {
@@ -386,10 +386,10 @@
             width: 85%;
             padding: 20px 0;
         }
-            .logo {
+            .header .logo {
                 display: flex;
             }
-            .logo img{
+            .header .logo img{
                 width: 60px;
             }
             .header-nav {
@@ -547,8 +547,12 @@
 
                 
         .footer {
-            height: 100vh;
+            min-height: 100vh;
         }
+
+            .footer .logo img{
+                width: 150px;
+            }
 
         .footer-container {
             width: 85%;
