@@ -60,12 +60,12 @@
                 width: 50%;
                 display: flex;
                 align-items: center;
+                margin-top: 20px;
             }
                 .section-1-body-container {
                     display: grid;
                     grid-row-gap: 20px;
-                    display: flex;
-                    flex-direction: column;
+                    
                 }
                 .section-1-body .title {
                     font-family: Raleway;
@@ -80,12 +80,12 @@
                     font-family: Open Sans;
                 }
                 
-                .form {
+                .section-1 .form {
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     grid-column-gap: 15px;
                 }
-                    .form input {
+                    .section-1 .form input {
                         font-family: Open Sans;
                         padding: 14px;
                         width: 320px;
@@ -94,7 +94,7 @@
                         border-radius: 3px;
                         outline: none;
                     }
-                    .form .btn {
+                    .section-1 .form .btn {
                         cursor: pointer;
                         font-family: Raleway;
                         letter-spacing: 1px;
@@ -122,9 +122,8 @@
     }  
     
         .section-2{
-            display: grid;
-            grid-column-gap: 100px;
             display: flex;
+            justify-content: space-between;
             width: 90%;
             margin: 0 auto;
         }
@@ -133,6 +132,7 @@
                 display: grid;
                 grid-row-gap: 35px;
                 width: 50%;
+                margin-top: 30px;
             }
 
                 .section-2-body .title {
@@ -141,25 +141,26 @@
                     font-family: Raleway;
                 }
                 .section-2-body .description{
-                    display: grid;
-                    grid-row-gap: 10px;
                     width: 90%;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    justify-content: space-between;
+                    height: 120px;
                 }
                 .section-2-body .text {
-
                 }
 
                 .section-2-body .lin{
-                    display: grid;
-                    grid-column-gap: 5px;
                     display: flex;
+                    align-items: center;
                     color: var(--Moderate-Cyan);
                     text-decoration: none;
                     border-bottom: 2px solid;
                 }
+                    .lin svg {
+                        margin-left: 5px;
+                    }
 
 
                 .section-2-body .testimonial {
@@ -170,20 +171,19 @@
                     grid-row-gap: 10px;
                     box-shadow: 0px 1px 7px rgba(0, 0, 0, .1);
                     background-color: #fff;
+
                 }
                     .user-infos {
-                        display: grid;
-                        grid-column-gap: 10px;
                         display: flex;
                         align-items: center;
+                        justify-content: space-between;
+                        width: 70%;
                     }
                         .user-infos img {
                             border-radius: 50%;
                             width: 40px;
                         }
-                        .user-infos .infos {
-
-                        }
+                        
                             .infos .name {
                                 font-weight: 700;
                             }
@@ -225,9 +225,6 @@
                 width: 40%;
                 display: grid;
                 grid-row-gap: 10px;
-                display: flex;
-                flex-direction: column;
-                /* justify-content: space-around; */
             }
             
                 .newlestter-form input {
@@ -248,6 +245,9 @@
                     text-align: center;
                     outline: none;
                     cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
     
 
@@ -260,12 +260,11 @@
         .footer-container {
             width: 90%;
             margin: 0 auto;
-            padding: 70px 0;
+            height: 400px;
             display: flex;
-            align-items: flex-start;
             flex-direction: column;
-            display: grid;
-            grid-row-gap: 20px;
+            justify-content: space-around;
+            padding: 50px 0; 
         }
 
             
@@ -277,26 +276,27 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-column-gap: 80px;
+
             }
                 .links-contact, .about-us, .contact-us {
-                    display: grid;
-                    grid-row-gap: 10px;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
                     font-size: 14px;
                 }
+                .links-contact a , .about-us li, .contact-us li{
+                    margin-bottom: 15px;
+                }
                 .links-contact .phone, .links-contact .mail{
-                    display: grid;
-                    grid-gap: 15px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
                 }
+                    .links-contact img{
+                        margin-right: 5px;
+                    }
                 .footer .socials-icons {
-                    display: grid;
-                    grid-column-gap: 20px;
                     display: flex;
                 }
                     .socials-icons svg {
@@ -306,6 +306,7 @@
                         border: 1px solid;
                         fill: var(--Light-Grayish-Blue);
                         border-radius: 50%;
+                        margin-right: 10px;
                     }
 
                 .footer-links ul {
@@ -330,7 +331,6 @@
 
     .section-1 {
         flex-direction: column-reverse;
-        grid-row-gap: 20px;
     }
     .section-1-body {
         width: 100%;
@@ -338,18 +338,22 @@
     .section-1-image{
         width: 100%;
     }
-    .form {
+    .section-1 .form {
         width: 95%;
         margin: 0 auto;
-        
     }
+        .section-1 .form input {
+            width: 100%;
+        }
 
     .section-2 {
         flex-direction: column-reverse;
-        grid-row-gap: 30px;
     }
         .section-2-body {
             width: 100%;
+        }
+        .section-2-body .description{
+            height: 140px;
         }
 
         .section-2-image {
@@ -358,15 +362,14 @@
             height: 200px;
         }
 
-        /* .form {
-            border: 2px solid red;
-        } */
-        .form input {
-            width: 100%;
+        .newlestter-form{
+            display: flex;
+            flex-direction: column;
         }
-        /* .form .btn {
-            width: 180px;
-        } */
+        .newlestter-form input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
 
         .newlestter-form .btn {
             width: 80%;
@@ -398,8 +401,6 @@
                 }
     .main {
         width: 100%;
-        display: flex;
-        flex-direction: column;
         margin-top: 20px;
     }
 
@@ -411,13 +412,15 @@
     }
         .section-1 {
             flex-direction: column-reverse;
-            grid-row-gap: 20px;
+            width: 100%;
         }
             .section-1-body {
                 width: 100%;
             }
                 .section-1-body-container {
                    text-align: center;
+                    display: grid;
+                    grid-row-gap: 20px;
                 }
                 .section-1-body .title {
                     font-size: 18px;
@@ -429,19 +432,20 @@
                     margin: 0 auto;
                 }
                 
-                .form {
-                    display: flex;
-                    flex-direction: column;
+                .section-1 .form {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
                     grid-row-gap: 15px;
                     width: 95%;
                     margin: 0 auto;
+
                 }
-                    .form input {
+                    .section-1 .form input {
                         width: 100%;
                         border-radius: 0px;
                         padding: 12px;
                     }
-                    .form .btn {
+                    .section-1 .form .btn {
                         width: 100%;
                         border-radius: 0px;
                         padding: 12px;
@@ -460,11 +464,10 @@
         }
             .section-2 {
                 flex-direction: column-reverse;
-                grid-row-gap: 30px;
+                justify-content: space-between;
             }
                 .section-2-body {
                     width: 100%;
-                    grid-row-gap: 18px;
                 }
                     .section-2-body .title {
                         font-size: 14px;
@@ -473,12 +476,13 @@
 
                     .section-2-body .description {
                         width: 100%;
-                        grid-row-gap: 15px;
+                        height: 150px;
                         font-size: 12px;
                     }
                     
 
                     .section-2-body .lin {
+
                         font-size: 10px;
                         align-self: center;
                     }
@@ -488,6 +492,9 @@
                         margin: 0 auto;
                         font-size: 10px;                        
                     }
+                        .user-infos {
+                            width: 80%;
+                        }
                         .user-infos img {
                             width: 25px;
                         }
@@ -502,12 +509,12 @@
             width: 85%;
             flex-direction: column;
             font-size: 12px;
-            grid-row-gap: 20px;
         }
 
             .newlestter-description {
                 width: 100%;
                 text-align: center;
+                margin-bottom: 20px;
             }
 
             .newlestter .title {
@@ -522,8 +529,6 @@
                 margin: 0 auto;
                 display: grid;
                 grid-row-gap: 10px;
-                /* border: 2px solid red; */
-                /* display: flex; */
             }
                 .newlestter-form input {
                     padding: 12px;
@@ -531,7 +536,6 @@
                     border: none;
                     outline: none;
                     width: 100%;
-                    /* box-shadow: 1px 2px 5px rgba(0, 0, 0, .4); */
                 }
 
                 .newlestter-form .btn {
@@ -541,33 +545,29 @@
                 }
 
 
-                body {
-                    min-height: 100vh;
-                }
+                
         .footer {
-            /* min-height: 100vh; */
+            height: 100vh;
         }
 
         .footer-container {
             width: 85%;
+            height: auto;
             padding: 40px 0;
+
         }
 
             .footer-links {
-                grid-row-gap: 50px;
+                margin-top: 30px;
                 display: flex;
                 flex-direction: column;
             }
                 .links-contact, .about-us, .contact-us {
-                    display: grid;
-                    grid-row-gap: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-start;
                     font-size: 14px;
+                    margin-bottom: 15px;
                 }
                 .footer .socials-icons {
-                    grid-column-gap: 10px;                    
+                    margin-bottom: 10px;
                     align-self: center;
                 }
                     .socials-icons svg {
